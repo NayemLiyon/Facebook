@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #F0F2F5;
+  
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+
+.fbdesc{
+  font-size: 24px;
+  line-height: 28px;
+  width: auto;
+  font-weight: 400;
+}
+h1.mb-3.text-primary.fbtitle {
+  font-size: 52px;
+  font-weight: bolder;
+}
+form.px-3.py-3.bg-white.rounded.mt-5 {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+button.w-100.btn.btn-lg.succsess {
+  color: white;
+  background: #42b72a;
+  font-weight: bold;
+}
+.forgot {
+  text-decoration: none;
+}
+a.mt-3 {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
