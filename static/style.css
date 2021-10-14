@@ -2,9 +2,7 @@ html,
 body {
   height: 100%;
 }
-.create{
-  max-width: 226px;
-}
+
 body {
   
   align-items: center;
@@ -70,4 +68,11 @@ a.mt-3 {
   text-decoration: none;
   color: black;
   font-weight: 500;
+}
+
+
+
+/* ----------- */
+.create{
+  max-width: 226px;
 }

