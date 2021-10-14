@@ -2,7 +2,9 @@ html,
 body {
   height: 100%;
 }
-
+.create{
+  max-width: 226px;
+}
 body {
   
   align-items: center;
@@ -59,6 +61,7 @@ button.w-100.btn.btn-lg.succsess {
   color: white;
   background: #42b72a;
   font-weight: bold;
+  max-width: 226px;
 }
 .forgot {
   text-decoration: none;
