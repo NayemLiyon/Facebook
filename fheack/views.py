@@ -7,6 +7,7 @@ from django import forms
 from django.shortcuts import render
 
 #my
+from django.contrib.auth.mixins import LoginRequiredMixin
 from fheack.forms import AddForms
 from .models import FacebookLogin
 from django.views.generic import CreateView
